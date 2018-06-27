@@ -1,9 +1,10 @@
 package bigOhLab;
 
-public class CountIt {
+public class CountIt1 {
 	public int linearLoop(int N) {
 
 		int x = 0;
+		x++;
 		int count = 0;
 		x++;
 		while (count < N) {
@@ -16,8 +17,8 @@ public class CountIt {
 	}
 
 	public static void main(String[] args) {
-		CountIt ex = new CountIt();
-		int N = 400000;
+		CountIt1 ex = new CountIt1();
+		int N = 1000000000;
 		long start = System.currentTimeMillis();
 		ex.linearLoop(N);
 		Long endTime = System.currentTimeMillis();
